@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </section>
             <br /> */}
-            <div className="container  pt-20 flex flex-row-reverse gap-3 items-center">
+            {/* <div className="container  pt-20 flex flex-row-reverse gap-3 items-center">
                 <div className="dashboard-text">
                     <h3 className="mb-3 font-bold text-2xl">Domina tus Ventas: Gestiona todo desde tu Dashboard Centralizado</h3>
                     <p>Con nuestro intuitivo dashboard centralizado, tendrás el control absoluto sobre tus ventas. Visualiza datos en tiempo real, gestiona inventario, realiza análisis detallados y
@@ -45,7 +45,7 @@ const Home = () => {
                 <div>
                     <img src="./dashboard.png" alt="dashboard" />
                 </div>
-            </div>
+            </div> */}
 
             <section className="container pt-10">
                 <h3 id="modo-administrador" className="text-center mb-10 text-2xl">Modo Administrador:</h3>
