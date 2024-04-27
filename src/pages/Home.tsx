@@ -13,20 +13,20 @@ const Home = () => {
             <section className="container p-20">
                 <h3 className="text-center text-2xl">El Sistema Cuenta con 2 Roles: Modo Admin y Modo Miembro</h3>
                 <div className="grid grid-cols-2 py-5 gap-3">
-                    <button onClick={() => window.location.href='#modo-administrador'} className="bg-gray-700 p-3 rounded-md">
+                    <button onClick={() => window.location.href = '#modo-administrador'} className="bg-gray-700 p-3 rounded-md">
                         <h3 className="text-center text-2xl mb-3">Administrador</h3>
                         <p>El rol de administrador brinda acceso completo al sistema, permitiendo la gestión de empleados, inventario, productos y
                             todas las cuentas generadas. Desde la creación y asignación de perfiles de usuario hasta el control total sobre los recursos del restaurante,
                             el modo Admin ofrece herramientas poderosas para una administración eficiente.</p>
                     </button>
-                    <div className="bg-gray-700 p-3 rounded-md">
+                    <button onClick={() => window.location.href = '#modo-miembro'} className="bg-gray-700 p-3 rounded-md">
                         <h3 className="text-center text-2xl mb-3">Miembro</h3>
                         <p>
                             Por otro lado, el rol de miembro ofrece la posibilidad de generar órdenes en tiempo real a lo largo del día. Los miembros pueden
                             acceder al catálogo de productos, realizar pedidos, y contribuir activamente al proceso de operación del restaurante, garantizando un servicio ágil y
                             eficiente para los clientes.
                         </p>
-                    </div>
+                    </button>
                 </div>
             </section>
             {/* <section className="container pt-10">
@@ -47,9 +47,9 @@ const Home = () => {
                 </div>
             </div> */}
 
-            <section className="container pt-10">
-                <h3 id="modo-administrador" className="text-center mb-10 text-2xl">Modo Administrador:</h3>
-                <div className="grid grid-cols-2 gap-3 mb-5">
+            <section className="container pt-10 ">
+                <h3 id="modo-administrador" className="text-center mb-10 text-2xl ">Modo Administrador:</h3>
+                <div className="grid md:grid-cols-2 gap-3 mb-16">
                     <div className="flex flex-col items-center justify-center" >
                         <h3 className="text-center text-xl mb-2">Gestion de Usuarios</h3>
                         <p>
@@ -60,7 +60,7 @@ const Home = () => {
                     </div>
                     <img src="./usuarios.png" alt="usuarios" />
                 </div>
-                <div className="grid grid-cols-2 gap-3 mb-5">
+                <div className="grid grid-cols-2 gap-3 mb-16">
                     <img src="./inventario.png" alt="inventario" />
                     <div className="flex flex-col items-center justify-center" >
                         <h3 className="text-center text-xl mb-2">Gestión de Inventario</h3>
@@ -71,7 +71,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-3 mb-5">
+                <div className="grid grid-cols-2 gap-3 mb-16">
                     <div className="flex flex-col items-center justify-center" >
                         <h3 className="text-center text-xl mb-2">Creacion de Productos</h3>
                         <p>
@@ -83,7 +83,7 @@ const Home = () => {
                     <img src="./productos.png" alt="productos" />
 
                 </div>
-                <div className="grid grid-cols-2 gap-3 mb-5">
+                <div className="grid md:grid-cols-2 gap-3 mb-16">
                     <img src="./productos.png" alt="productos" />
 
                     <div className="flex flex-col items-center justify-center" >
@@ -96,7 +96,51 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="container pt-10 ">
+                <h3 id="modo-miembro" className="text-center mb-10 text-2xl">Modo Miembro:</h3>
+                <div className="grid grid-cols-2 gap-3 mb-16">
+                    <div className="flex flex-col items-center justify-center" >
+                        <h3 className="text-center text-xl mb-2">Menu</h3>
+                        <p>
+                            ¡Disfruta de la comodidad de ordenar desde  el restaurante! Nuestro proceso
+                            de pedido fácil de usar te permite crear tu orden perfecta en solo unos pocos clics. Explora nuestro menú hoy y descubre nuevas delicias para satisfacer tu apetito.
+                        </p>
+                    </div>
+                    <img src="./menu.png" alt="menu" />
+                </div>
+                <div className="grid grid-cols-2 gap-3 mb-16">
+                    <img src="./ordenes.png" alt="ordenes" />
+                    <div className="flex flex-col items-center justify-center" >
+                        <h3 className="text-center text-xl mb-2">Ordenes</h3>
+                        <p>
+                            En la sección de Órdenes Pendientes, puedes encontrar un registro completo de todas las órdenes que están esperando ser procesadas por nuestro equipo de cocina.
+                            Desde tus pedidos más recientes hasta aquellos que están en espera, nuestra plataforma te proporciona una visión detallada de todas tus órdenes pendientes.
+                        </p>
+                    </div>
+                </div>
+                <div className="grid grid-cols-2 gap-3 mb-16">
+                    <div className="flex flex-col items-center justify-center" >
+                        <h3 className="text-center text-xl mb-2">Ordenes Listas Para Entregar</h3>
+                        <p>
+                            En la sección de Órdenes Listas para Entregar, encontrarás un registro completo de todas las órdenes que han sido preparadas y están listas para ser entregadas a nuestros clientes.
+                            Desde las deliciosas creaciones hasta los sabrosos platos, nuestra plataforma te brinda una visión detallada de todas las órdenes que esperan ser recogidas o entregadas
+                        </p>
+                    </div>
+                    <img src="./ordenes-lista.png" alt="ordenes lista" />
 
+                </div>
+                <div className="grid grid-cols-2 gap-3 mb-16">
+                    <img src="./pagar.png" alt="productos" />
+
+                    <div className="flex flex-col items-center justify-center" >
+                        <h3 className="text-center text-xl mb-2">Pagar Cuenta</h3>
+                        <p>
+                            En la sección de Pagar Órdenes, puedes finalizar fácilmente tus compras y completar el proceso de pago para tus órdenes pendientes.
+                            Desde tus deliciosos platillos hasta tus bebidas favoritas, nuestra plataforma te brinda una experiencia de pago segura y conveniente.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <img src="./whatsapp.png" alt="imagen whatsapp" style={{ position: 'fixed', bottom: '40px', right: '40px', width: '70px' }} className="hover:scale-110 hover:cursor-pointer transition-all" />
 
 
