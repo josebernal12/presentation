@@ -8,6 +8,7 @@ import Menu from "./pages/members/Menu"
 import Orders from "./pages/members/Orders"
 import OrdersReady from "./pages/members/Orders-Ready"
 import Pay from "./pages/members/Pay"
+import BillAdmin from "./pages/BillAdmin"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/users" element={<Users />} />
         <Route path="/inventary" element={<Inventary />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/bill" element={<BillAdmin />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/orders-ready" element={<OrdersReady />} />

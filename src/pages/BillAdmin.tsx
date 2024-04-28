@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 
 function BillAdmin() {
-    const [videoSrc, setVideoSrc] = useState('./agregar-producto.mp4');
+    const [videoSrc, setVideoSrc] = useState('./descargar-factura.mp4');
 
     const handleButtonClick = (src: string) => {
         setVideoSrc(src);
@@ -14,25 +14,21 @@ function BillAdmin() {
                 <div className="col-span-2">
                     <ul>
                         <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                            <button onClick={() => handleButtonClick('./agregar-producto.mp4')}>
-                                Crear Producto
+                            <button onClick={() => handleButtonClick('./descargar-factura.mp4')}>
+                                Descargar Factura
                             </button>
                         </li>
                         <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
-                            <button onClick={() => handleButtonClick('./actualizar-producto.mp4')}>
-                                Actualizar Producto
+                            <button onClick={() => handleButtonClick('./imprimir-factura.mp4')}>
+                                Imprimir Factura
                             </button>
                         </li>
                         <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                            <button onClick={() => handleButtonClick('./eliminar-producto.mp4')}>
-                                Eliminar Producto
+                            <button onClick={() => handleButtonClick('./actualizar-factura.mp4')}>
+                                Actualizar Factura
                             </button>
                         </li>
-                        <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
-                            <button onClick={() => handleButtonClick('./buscar-producto.mp4')}>
-                                Buscar Producto
-                            </button>
-                        </li>
+                     
                     </ul>
                 </div>
                 <div className="col-span-4">

@@ -40,7 +40,7 @@ const ModeAdministrator = () => {
                 <img src="./productos.png" alt="productos" />
 
             </Link>
-            <div data-aos="fade-right" className="grid md:grid-cols-2 gap-3 mb-16">
+            <Link to={'/bill'} data-aos="fade-right" className="grid md:grid-cols-2 gap-3 mb-16">
                 <img src="./productos.png" alt="productos" />
 
                 <div className="flex flex-col items-center justify-center bg-blue-500 rounded-md" >
@@ -51,7 +51,7 @@ const ModeAdministrator = () => {
                         la contabilidad y asegúrate de que todas las transacciones estén correctamente registradas para un análisis financiero preciso.
                     </p>
                 </div>
-            </div>
+            </Link>
         </section>
     )
 }
