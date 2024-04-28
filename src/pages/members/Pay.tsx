@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 
 function Pay() {
-    const [videoSrc, setVideoSrc] = useState('./agregar-producto.mp4');
+    const [videoSrc, setVideoSrc] = useState('./pagar-ticket.mp4');
 
     const handleButtonClick = (src: string) => {
         setVideoSrc(src);
@@ -14,17 +14,17 @@ function Pay() {
                 <div className="col-span-2">
                     <ul>
                         <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                            <button onClick={() => handleButtonClick('./agregar-producto.mp4')}>
+                            <button onClick={() => handleButtonClick('./pagar-ticket.mp4')}>
                                 Pagar
                             </button>
                         </li>
                         <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
-                            <button onClick={() => handleButtonClick('./actualizar-producto.mp4')}>
+                            <button onClick={() => handleButtonClick('./imprimir-ticket.mp4')}>
                                 Imprimir Ticket
                             </button>
                         </li>
                         <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                            <button onClick={() => handleButtonClick('./eliminar-producto.mp4')}>
+                            <button onClick={() => handleButtonClick('./descargar-ticket.mp4')}>
                                 Descargar Ticket
                             </button>
                         </li>
