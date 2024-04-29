@@ -9,13 +9,15 @@ import Orders from "./pages/members/Orders"
 import OrdersReady from "./pages/members/Orders-Ready"
 import Pay from "./pages/members/Pay"
 import BillAdmin from "./pages/BillAdmin"
+import Principal from "./pages/principal/Principal"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Principal />} />
+        <Route path="/roles" element={<Home />} />
         <Route path="/steps" element={<Steps />} />
         <Route path="/users" element={<Users />} />
         <Route path="/inventary" element={<Inventary />} />

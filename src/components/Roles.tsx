@@ -1,7 +1,7 @@
 
 const Roles = () => {
     return (
-        <section className="container p-20">
+        <section className="container mx-auto p-20">
             <h3 className="text-center text-2xl">El Sistema Cuenta con 2 Roles: Modo Admin y Modo Miembro</h3>
             <div className="grid md:grid-cols-2 py-5 gap-3">
                 <button onClick={() => window.location.href = '#modo-administrador'} className="bg-gray-700 p-3 rounded-md">

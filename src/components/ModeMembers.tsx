@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const ModeMembers = () => {
     return (
-        <section className="container pt-10 ">
+        <section className="container mx-auto pt-10 ">
             <h3 id="modo-miembro" className="text-center mb-10 text-2xl">Modo Miembro:</h3>
             <Link to={'/menu'} data-aos="fade-left" className="grid md:grid-cols-2 gap-3 mb-16">
                 <div className="flex flex-col items-center justify-center bg-purple-500 rounded-md" >

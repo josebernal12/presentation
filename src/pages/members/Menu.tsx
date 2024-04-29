@@ -8,7 +8,7 @@ function Menu() {
     };
 
     return (
-        <div className="container">
+        <div className="container mx-auto">
             <h1 className="text-center p-10 text-2xl">Gestión de Productos</h1>
             <div className="grid grid-cols-6 justify-center items-center gap-5">
                 <div className="col-span-2">

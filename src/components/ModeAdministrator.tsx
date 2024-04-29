@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const ModeAdministrator = () => {
     return (
-        <section className="container pt-10 ">
+        <section className="container mx-auto pt-10 ">
             <h3 id="modo-administrador" className="text-center mb-10 text-2xl ">Modo Administrador:</h3>
             <div data-aos="fade-left">
                 <Link to={'/users'} className="grid md:grid-cols-2 gap-3 mb-16">

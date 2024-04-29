@@ -1,7 +1,7 @@
 
 const Steps = () => {
     return (
-        <div className="container pt-5">
+        <div className="container pt-5 mx-auto">
             <p className="mb-5">Pasos para generar una venta:</p>
             <div>
                 <p className="mb-2">Paso numero 1: Creacion de Ticket</p>

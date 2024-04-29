@@ -6,13 +6,12 @@ body {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: black;
   color: white;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .menu {
@@ -27,6 +26,57 @@ body {
   grid-column: 1 /2;
   grid-row: 1/2;
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+.imagen-header {
+  margin: 0;
+  padding: 0;
+  /* Fondo negro */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/header-2.jpg');
+  /* Gradiente lineal con sombreado y imagen de fondo */
+  /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .imagen-header {
+    height: 300px; /* Altura para pantallas pequeñas */
+  }
+  .title {
+    width: 350px;
+  } 
+}
+
+/* Para pantallas medianas (md) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .imagen-header {
+    height: 600px; /* Altura para pantallas medianas */
+  }
+  
+  .title {
+    width: 600px;
+  } 
+  
+
+}
+
+/* Para pantallas grandes (lg) */
+@media screen and (min-width: 992px) {
+  .imagen-header {
+    height: 700px; /* Altura para pantallas grandes */
+  }
+  .title {
+    width: 800px;
+  } 
+}
+
+.form {
+  width: 600px;
+
 }
