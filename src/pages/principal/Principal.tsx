@@ -1,19 +1,9 @@
-import { Link } from "react-router-dom"
+import Nav from "./components/Nav"
 
 const Principal = () => {
     return (
         <>
-            <header className="bg-gray-900 p-7 ">
-                <div className="container mx-auto flex flex-col items-center md:flex-row  md:justify-between">
-                    <h1 className="text-2xl">FastServ</h1>
-                    <nav className="flex flex-col items-center md:flex-row gap-3">
-                        <Link className="hover:border-b-2 hover:border-yellow-500 " to={'#'}>Inicio</Link>
-                        <Link className="hover:border-b-2 hover:border-yellow-500 " to={'#'}>Roles</Link>
-                        <Link className="hover:border-b-2 hover:border-yellow-500 " to={'#'}>Pasos Para Generar una Venta</Link>
-                        <Link className="hover:border-b-2 hover:border-yellow-500 " to={'#'}>Acerca de Nosotros</Link>
-                    </nav>
-                </div>
-            </header>
+            <Nav />
             <div className="imagen-header flex flex-col items-center justify-center space-y-5 ">
                 <h2 className=" text-xl md:text-5xl title">Gestiona con Sabor: Tu Solución Integral para Pedidos de Restaurantes</h2>
                 <button className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold">
@@ -28,7 +18,7 @@ const Principal = () => {
                 <div className="flex flex-col items-center justify-center">
                     <p className="p-2 md:p-0">  Optimiza la operatividad de tu equipo de servicio al simplificar el procedimiento de pedidos. Al mejorar la eficiencia en el proceso de solicitudes, tu personal
                         puede dedicar más tiempo a ofrecer un servicio excepcional, brindando una experiencia más satisfactoria a tus clientes.</p>
-                    <button className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold mt-5 md:mt-0">
+                    <button className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold my-5 md:my-0">
                         Comenzar Ahora Mismo
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />

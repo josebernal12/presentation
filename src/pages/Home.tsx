@@ -2,10 +2,12 @@ import Header from "../components/Header"
 import ModeAdministrator from "../components/ModeAdministrator"
 import ModeMembers from "../components/ModeMembers"
 import Roles from "../components/Roles"
+import Nav from "./principal/components/Nav"
 
 const Home = () => {
     return (
         <>
+            <Nav />
             <Header />
             <Roles />
             {/* <section className="container pt-10">
