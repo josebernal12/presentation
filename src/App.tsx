@@ -1,14 +1,14 @@
 import Home from "./pages/Home"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Steps from "./pages/Steps"
-import Users from "./pages/Users"
-import Inventary from "./pages/Inventary"
-import Products from "./pages/Products"
+import Steps from "./pages/steps/Steps"
+import Users from "./pages/admin/Users"
+import Inventary from "./pages/admin/Inventary"
+import Products from "./pages/admin/Products"
 import Menu from "./pages/members/Menu"
 import Orders from "./pages/members/Orders"
 import OrdersReady from "./pages/members/Orders-Ready"
 import Pay from "./pages/members/Pay"
-import BillAdmin from "./pages/BillAdmin"
+import BillAdmin from "./pages/admin/BillAdmin"
 import Principal from "./pages/principal/Principal"
 
 function App() {

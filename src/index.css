@@ -43,32 +43,38 @@ html {
   background-attachment: fixed;
   height: 200px;
 }
+
 .form {
   width: 300px;
 
 }
+
 @media screen and (max-width: 767px) {
   .imagen-header {
-    height: 300px; /* Altura para pantallas pequeñas */
+    height: 300px;
+    /* Altura para pantallas pequeñas */
   }
+
   .title {
     width: 350px;
-  } 
+  }
 
 }
 
 /* Para pantallas medianas (md) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .imagen-header {
-    height: 600px; /* Altura para pantallas medianas */
+    height: 600px;
+    /* Altura para pantallas medianas */
   }
-  
+
   .title {
     width: 600px;
-  } 
+  }
+
   .form {
     width: 600px;
-  
+
   }
 
 }
@@ -76,14 +82,25 @@ html {
 /* Para pantallas grandes (lg) */
 @media screen and (min-width: 992px) {
   .imagen-header {
-    height: 700px; /* Altura para pantallas grandes */
+    height: 700px;
+    /* Altura para pantallas grandes */
   }
+
   .title {
     width: 800px;
-  } 
+  }
+
   .form {
     width: 600px;
-  
+
   }
 }
 
+.image {
+  transition: all .3s ease-in-out;
+}
+
+.image:hover {
+  scale: 1.1;
+  rotate: -3deg
+}

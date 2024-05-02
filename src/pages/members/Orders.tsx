@@ -55,6 +55,8 @@ function Orders() {
                     </div>
                 </div>
             </div>
+            <img src="./whatsapp.png" alt="imagen whatsapp" style={{ position: 'fixed', bottom: '40px', right: '40px', width: '70px' }} className="hover:scale-110 hover:cursor-pointer transition-all" />
+
         </>
     );
 }

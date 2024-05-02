@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Nav from './principal/components/Nav';
+import Nav from '../principal/components/Nav';
 import { Link } from 'react-router-dom';
 
-function Users() {
+function Inventary() {
     const [videoSrc, setVideoSrc] = useState('./agregar-producto.mp4');
 
     const handleButtonClick = (src: string) => {
@@ -25,32 +25,22 @@ function Users() {
                         <ul>
                             <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
                                 <button onClick={() => handleButtonClick('./agregar-producto.mp4')}>
-                                    Agregar Usuario
+                                    Crear Producto
                                 </button>
                             </li>
                             <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
                                 <button onClick={() => handleButtonClick('./actualizar-producto.mp4')}>
-                                    Actualizar Usuario
+                                    Actualizar Producto
                                 </button>
                             </li>
                             <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                                <button onClick={() => handleButtonClick('./eliminar-usuario.mp4')}>
-                                    Eliminar Usuario
+                                <button onClick={() => handleButtonClick('./eliminar-producto.mp4')}>
+                                    Eliminar Producto
                                 </button>
                             </li>
                             <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
-                                <button onClick={() => handleButtonClick('./buscar-usuario.mp4')}>
-                                    Buscar Usuario
-                                </button>
-                            </li>
-                            <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                                <button onClick={() => handleButtonClick('./imprimir-excel-usuario.mp4')}>
-                                    Crear Tabla Excel Usuarios
-                                </button>
-                            </li>
-                            <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
-                                <button onClick={() => handleButtonClick('./imprimir-pdf-usuario.mp4')}>
-                                    Crear PDF Usuarios
+                                <button onClick={() => handleButtonClick('./buscar-producto.mp4')}>
+                                    Buscar Producto
                                 </button>
                             </li>
                         </ul>
@@ -60,8 +50,10 @@ function Users() {
                     </div>
                 </div>
             </div>
+            <img src="./whatsapp.png" alt="imagen whatsapp" style={{ position: 'fixed', bottom: '40px', right: '40px', width: '70px' }} className="hover:scale-110 hover:cursor-pointer transition-all" />
+
         </>
     );
 }
 
-export default Users;
+export default Inventary;
