@@ -1,4 +1,5 @@
 import { TypewriterEffectSmoothPrincipal } from "../../animation/title/TypewriterSmoothPrincipal"
+import Modal from "../../components/modal/Modal"
 import Nav from "./components/Nav"
 
 const Principal = () => {
@@ -7,16 +8,11 @@ const Principal = () => {
             <Nav />
             <TypewriterEffectSmoothPrincipal />
             <div className="container mt-10 mx-auto flex flex-col md:flex-row items-center justify-center gap-3">
-                <img src="./ticket2.png" alt="ticket imagen" className="image"/>
+                <img src="./waiter.png" alt="ticket imagen" className="image" />
                 <div className="flex flex-col items-center justify-center">
                     <p data-aos="zoom-in" className="p-2 md:p-0">  Optimiza la operatividad de tu equipo de servicio al simplificar el procedimiento de pedidos. Al mejorar la eficiencia en el proceso de solicitudes, tu personal
                         puede dedicar más tiempo a ofrecer un servicio excepcional, brindando una experiencia más satisfactoria a tus clientes.</p>
-                    <button className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold my-5 md:my-0">
-                        Comenzar Ahora Mismo
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                        </svg>
-                    </button>
+                  <Modal/>
                 </div>
             </div>
             <div className="bg-gray-900 p-5">
@@ -68,15 +64,15 @@ const Principal = () => {
                     <div className="flex flex-col justify-center items-center">
                         <p data-aos="zoom-in-right" className="text-center mb-5 ">Contarás con la conveniencia y seguridad de los pagos en línea al utilizar nuestra plataforma. Nuestro sistema garantiza transacciones seguras y protegidas, brindándote tranquilidad y confianza en cada compra o transacción financiera que realices.
                             Simplifica tus procesos de pago y disfruta de una experiencia fluida y sin complicaciones con nosotros</p>
-                        <button className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold">Contactanos</button>
+                        <button onClick={() => window.location.href = '#contactanos'} className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold">Contáctanos </button>
 
                     </div>
                     <img src="./pagos-linea.png" alt="pagos" />
                 </div>
             </div>
-            <div className="bg-gray-900 p-5">
+            <div className="bg-gray-900 p-5 " id="contactanos">
                 <div className="container mx-auto mt-10">
-                    <h3 className="text-center text-xl mb-5">Contactanos</h3>
+                    <h3 className="text-center text-xl mb-5">Contáctanos </h3>
                     <form className="flex flex-col justify-center items-center form mx-auto">
                         <div className="flex flex-col w-full mb-5 ">
                             <label htmlFor="nombre" className="mb-1 text-white text-center">Nombre:</label>
@@ -95,7 +91,6 @@ const Principal = () => {
                 </div>
             </div>
             <img src="./whatsapp.png" alt="imagen whatsapp" style={{ position: 'fixed', bottom: '40px', right: '40px', width: '70px' }} className="hover:scale-110 hover:cursor-pointer transition-all" />
-
         </>
     )
 }
