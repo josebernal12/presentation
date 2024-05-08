@@ -44,11 +44,16 @@ function Users() {
                                 </button>
                             </li>
                             <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
+                                <button onClick={() => handleButtonClick('./importando-datos.mp4')}>
+                                    Importar Tabla Excel Usuarios
+                                </button>
+                            </li>
+                            <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
                                 <button onClick={() => handleButtonClick('./imprimir-excel-usuario.mp4')}>
                                     Crear Tabla Excel Usuarios
                                 </button>
                             </li>
-                            <li className="text-center mb-5 bg-purple-500 rounded-md p-2 hover:cursor-pointer hover:bg-purple-600 transition-all">
+                            <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
                                 <button onClick={() => handleButtonClick('./imprimir-pdf-usuario.mp4')}>
                                     Crear PDF Usuarios
                                 </button>
