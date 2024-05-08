@@ -3,7 +3,7 @@ import Nav from '../principal/components/Nav';
 import { Link } from 'react-router-dom';
 
 function Users() {
-    const [videoSrc, setVideoSrc] = useState('./agregar-producto.mp4');
+    const [videoSrc, setVideoSrc] = useState('./agregar-usuario.mp4');
 
     const handleButtonClick = (src: string) => {
         setVideoSrc(src);
@@ -24,7 +24,7 @@ function Users() {
                     <div className="col-span-2">
                         <ul>
                             <li className="text-center mb-5 bg-blue-500 rounded-md p-2 hover:cursor-pointer hover:bg-blue-600 transition-all">
-                                <button onClick={() => handleButtonClick('./agregar-producto.mp4')}>
+                                <button onClick={() => handleButtonClick('./agregar-usuario.mp4')}>
                                     Agregar Usuario
                                 </button>
                             </li>

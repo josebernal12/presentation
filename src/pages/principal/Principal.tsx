@@ -10,9 +10,9 @@ const Principal = () => {
             <div className="container mt-10 mx-auto flex flex-col md:flex-row items-center justify-center gap-3">
                 <img src="./waiter.png" alt="ticket imagen" className="image" />
                 <div className="flex flex-col items-center justify-center">
-                    <p data-aos="zoom-in" className="p-2 md:p-0">  Optimiza la operatividad de tu equipo de servicio al simplificar el procedimiento de pedidos. Al mejorar la eficiencia en el proceso de solicitudes, tu personal
+                    <p data-aos="zoom-in" className="p-2 md:p-0 mb-5">  Optimiza la operatividad de tu equipo de servicio al simplificar el procedimiento de pedidos. Al mejorar la eficiencia en el proceso de solicitudes, tu personal
                         puede dedicar más tiempo a ofrecer un servicio excepcional, brindando una experiencia más satisfactoria a tus clientes.</p>
-                  <Modal/>
+                    <Modal />
                 </div>
             </div>
             <div className="bg-gray-900 p-5">
@@ -59,15 +59,17 @@ const Principal = () => {
                 </div>
             </div>
             <div className="container mx-auto mt-10">
-                <h3 className="text-xl text-center">Contaras con pagos en linea de manera segura</h3>
-                <div className="grid md:grid-cols-2 p-10">
+                <h3 className="text-xl text-center">Podras Importar tu Inventario</h3>
+                <div className="grid md:grid-cols-2 p-10 gap-10">
                     <div className="flex flex-col justify-center items-center">
-                        <p data-aos="zoom-in-right" className="text-center mb-5 ">Contarás con la conveniencia y seguridad de los pagos en línea al utilizar nuestra plataforma. Nuestro sistema garantiza transacciones seguras y protegidas, brindándote tranquilidad y confianza en cada compra o transacción financiera que realices.
-                            Simplifica tus procesos de pago y disfruta de una experiencia fluida y sin complicaciones con nosotros</p>
-                        <button onClick={() => window.location.href = '#contactanos'} className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold">Contáctanos </button>
+                        <p data-aos="zoom-in-right" className="text-center mb-5 ">Con nuestra plataforma, no solo te ofrecemos una experiencia visualmente vibrante y cautivadora,
+                            sino que también te brindamos la funcionalidad necesaria para gestionar tu negocio de manera eficiente. Podrás importar fácilmente tu inventario, aprovechando
+                            nuestra interfaz intuitiva y amigable. Ya sea que estés administrando una tienda en línea, un almacén de productos o cualquier otro tipo de negocio, nuestra herramienta de importación de inventario te permitirá mantener tus registros actualizados de manera rápida y sin complicaciones.
+                            Así, podrás concentrarte en lo que más importa: hacer crecer tu empresa y deleitar a tus clientes con productos de calidad</p>
+                        <button onClick={() => window.location.href = '#contactanos'} className="bg-white text-black rounded-2xl p-3 flex items-center justify-center gap-3 hover:scale-105 transition-all font-bold mt-5 md:mt-0 w-full">Contáctanos</button>
 
                     </div>
-                    <img src="./pagos-linea.png" alt="pagos" />
+                    <img src="./excel.png" alt="excel" className="w-96" />
                 </div>
             </div>
             <div className="bg-gray-900 p-5 " id="contactanos">
@@ -76,21 +78,24 @@ const Principal = () => {
                     <form className="flex flex-col justify-center items-center form mx-auto">
                         <div className="flex flex-col w-full mb-5 ">
                             <label htmlFor="nombre" className="mb-1 text-white text-center">Nombre:</label>
-                            <input type="text" id="nombre" placeholder="Nombre" className="bg-gray-700 w-full p-2 rounded-md" />
+                            <input type="text" id="nombre" placeholder="Nombre" className="bg-gray-700 w-full p-2 rounded-md" required />
                         </div>
                         <div className="flex flex-col w-full mb-5">
                             <label htmlFor="email" className="mb-1 text-white text-center">Email:</label>
-                            <input type="email" id="email" placeholder="Email" className="bg-gray-700 w-full p-2 rounded-md" />
+                            <input type="email" id="email" placeholder="Email" className="bg-gray-700 w-full p-2 rounded-md" required />
                         </div>
                         <div className="flex flex-col w-full mb-5">
                             <label htmlFor="mensaje" className="mb-1 text-white text-center">Mensaje:</label>
-                            <textarea id="mensaje" cols={30} rows={10} placeholder="Mensaje" className="bg-gray-700 w-full p-1 rounded-md"></textarea>
+                            <textarea id="mensaje" cols={30} rows={10} placeholder="Mensaje" className="bg-gray-700 w-full p-1 rounded-md" required></textarea>
                         </div>
-                        <button className="bg-white text-black rounded-2xl p-3  flex gap-3 hover:scale-105 transition-all font-bold mt-5 md:mt-0">Enviar Mensaje</button>
+                        <button className="bg-white text-black rounded-2xl p-3 flex items-center justify-center gap-3 hover:scale-105 transition-all font-bold mt-5 md:mt-0 w-full">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>
-            <img src="./whatsapp.png" alt="imagen whatsapp" style={{ position: 'fixed', bottom: '40px', right: '40px', width: '70px' }} className="hover:scale-110 hover:cursor-pointer transition-all" />
+            <a href="https://wa.me/3312974030">
+                <img src="./whatsapp.png" alt="imagen whatsapp" style={{ position: 'fixed', bottom: '40px', right: '40px', width: '70px' }} className="hover:scale-110 hover:cursor-pointer transition-all" />
+
+            </a>
         </>
     )
 }

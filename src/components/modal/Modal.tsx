@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const   Modal = () => {
+const Modal = () => {
     const [modal, setModal] = useState(false)
     return (
         <>
@@ -12,9 +12,9 @@ const   Modal = () => {
             </button>
             {modal && (
 
-                <div id="default-modal" tabIndex={-1} aria-hidden="true" className="bg-gray-500 bg-opacity-50 flex items-center justify-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-screen">
+                <div id="default-modal" tabIndex={-1} aria-hidden="true" className="bg-gray-900 bg-opacity-50 flex items-center justify-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-screen">
                     <div className="relative p-4 w-full max-w-2xl max-h-full">
-                        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div className="relative bg-gray-300 rounded-lg shadow dark:bg-gray-700">
                             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                     Terms of Service
@@ -34,8 +34,12 @@ const   Modal = () => {
                                     The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
                                 </p>
                             </div>
+                            <img src="/dashboard.png" alt="image dashboard" className="p-5" />
                             <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                <button data-modal-hide="default-modal" type="button" className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Enviar Mensaje</button>
+                                <a href="https://wa.me/3312974030"
+                                    className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                                    Enviar Mensaje
+                                    </a>
                                 <button onClick={() => setModal(!modal)} data-modal-hide="default-modal" type="button" className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cerrar</button>
                             </div>
                         </div>
