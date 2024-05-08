@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const ModeMembers = () => {
     return (
         <section className="container mx-auto pt-10 ">
-            <h3 id="modo-miembro" className="text-center mb-10 text-2xl">Modo Miembro:</h3>
+            <h3 id="modo-miembro" className="text-center mb-10 text-2xl text-indigo-700">Modo Miembro:</h3>
             <Link to={'/menu'} data-aos="fade-left" className="grid md:grid-cols-2 gap-3 mb-16">
                 <div className="flex flex-col items-center justify-center bg-purple-500 rounded-md" >
                     <h3 className="text-center text-xl mb-2">Menu</h3>
@@ -12,10 +12,10 @@ const ModeMembers = () => {
                         de pedido fácil de usar te permite crear tu orden perfecta en solo unos pocos clics. Explora nuestro menú hoy y descubre nuevas delicias para satisfacer tu apetito.
                     </p>
                 </div>
-                <img src="./menu.png" alt="menu" />
+                <img src="./menu.png" alt="menu" className="border border-indigo-700" />
             </Link>
             <Link to={'/orders'} data-aos="fade-right" className="grid md:grid-cols-2 gap-3 mb-16">
-                <img src="./ordenes.png" alt="ordenes" />
+                <img src="./ordenes.png" alt="ordenes" className="border border-indigo-700" />
                 <div className="flex flex-col items-center justify-center bg-blue-500 rounded-md" >
                     <h3 className="text-center text-xl mb-2">Ordenes</h3>
                     <p className="p-5">
@@ -32,11 +32,11 @@ const ModeMembers = () => {
                         Desde las deliciosas creaciones hasta los sabrosos platos, nuestra plataforma te brinda una visión detallada de todas las órdenes que esperan ser recogidas o entregadas
                     </p>
                 </div>
-                <img src="./ordenes-lista.png" alt="ordenes lista" />
+                <img src="./ordenes-lista.png" alt="ordenes lista" className="border border-indigo-700" />
 
             </Link>
             <Link to={'/pay'} data-aos="fade-right" className="grid md:grid-cols-2 gap-3 mb-16">
-                <img src="./pagar.png" alt="productos" />
+                <img src="./pagar.png" alt="productos" className="border border-indigo-700" />
 
                 <div className="flex flex-col items-center justify-center bg-blue-500 rounded-md" >
                     <h3 className="text-center text-xl mb-2">Pagar Cuenta</h3>

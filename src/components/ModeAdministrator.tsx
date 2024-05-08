@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const ModeAdministrator = () => {
     return (
         <section className="container mx-auto pt-10 ">
-            <h3 id="modo-administrador" className="text-center mb-10 text-2xl ">Modo Administrador:</h3>
+            <h3 id="modo-administrador" className="text-center mb-10 text-2xl text-indigo-700">Modo Administrador:</h3>
             <div data-aos="fade-left">
                 <Link to={'/users'} className="grid md:grid-cols-2 gap-3 mb-16">
                     <div className="flex flex-col items-center justify-center bg-purple-500 rounded-md" >
@@ -14,11 +14,11 @@ const ModeAdministrator = () => {
                             Simplifica la gestión de usuarios y garantiza la seguridad de tus datos con nuestras herramientas intuitivas y personalizables
                         </p>
                     </div>
-                    <img src="./usuarios.png" alt="usuarios" />
+                    <img src="./usuarios.png" alt="usuarios" className="border border-indigo-700"/>
                 </Link>
             </div>
             <Link to={'/inventary'} data-aos="fade-right" className="grid md:grid-cols-2 gap-3 mb-16">
-                <img src="./inventario.png" alt="inventario" />
+                <img src="./inventario.png" alt="inventario" className="border border-indigo-700" />
                 <div className="flex flex-col items-center justify-center bg-blue-500 rounded-md" >
                     <h3 className="text-center text-xl mb-2">Gestión de Inventario</h3>
                     <p className="p-5">
@@ -37,11 +37,11 @@ const ModeAdministrator = () => {
                         Simplifica el proceso de creación de productos, experimenta con nuevas recetas y mantén tu oferta fresca y atractiva para satisfacer las necesidades de tus clientes más exigentes.
                     </p>
                 </div>
-                <img src="./productos.png" alt="productos" />
+                <img src="./productos.png" alt="productos" className="border border-indigo-700" />
 
             </Link>
             <Link to={'/bill'} data-aos="fade-right" className="grid md:grid-cols-2 gap-3 mb-16">
-                <img src="./productos.png" alt="productos" />
+                <img src="./productos.png" alt="productos" className="border border-indigo-700" />
 
                 <div className="flex flex-col items-center justify-center bg-blue-500 rounded-md" >
                     <h3 className="text-center text-xl mb-2">Cuentas</h3>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="bg-gray-800 border-gray-200 sticky top-0 z-10">
+    <nav className="bg-indigo-700 border-gray-200 sticky top-0 z-10 shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/logonew.avif" className="h-8" alt="theMenu Logo" />

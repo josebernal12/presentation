@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom"
 import Nav from "../principal/components/Nav"
+import Button from "../../components/ui/button"
 
 const Steps = () => {
     return (
         <>
             <Nav />
-            <Link to={'/roles'} className="bg-white text-black rounded-2xl p-2  flex gap-3 hover:scale-105 transition-all font-bold m-5 w-32">
+            <Button asChild className=" p-2  flex gap-3 hover:scale-105 transition-all font-bold m-5 w-32">
+            <Link to={'/roles'} className="flex gap-2 items-center" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                 </svg>
                 Regresar
             </Link>
-            <div className="container pt-5 mx-auto">
+            </Button>
+            <div className="container pt-5 mx-auto text-indigo-700">
                 <p className="mb-5">Pasos para generar una venta:</p>
                 <div>
                     <p className="mb-2">Paso numero 1: Creacion de Ticket</p>
