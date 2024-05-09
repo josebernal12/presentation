@@ -136,9 +136,8 @@ const Principal = () => {
             <p data-aos="zoom-in-right" className="text-center mb-5  text-indigo-700 leading-loose text-lg">
               Con nuestra plataforma, no solo te ofrecemos una experiencia visualmente vibrante y cautivadora, sino que también te brindamos la funcionalidad necesaria para gestionar tu
               negocio de manera eficiente.
-              Podrás importar fácilmente tu inventario, aprovechando nuestra interfaz intuitiva y amigable. Ya sea que estés administrando una tienda en línea, un almacén de productos o cualquier
-              otro tipo de negocio, nuestra herramienta de importación de inventario te permitirá mantener tus registros actualizados de manera rápida y sin complicaciones. Así, podrás concentrarte
-              en lo que más importa: hacer crecer tu empresa y deleitar a tus clientes con productos de calidad
+              Podrás importar fácilmente tu inventario, aprovechando nuestra interfaz intuitiva y amigable. nuestra herramienta de importación de inventario te permitirá mantener 
+              tus registros actualizados de manera rápida y sin complicaciones.
             </p>
             <Button
               onClick={() => (window.location.href = "#contactanos")}
