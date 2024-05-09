@@ -129,17 +129,16 @@ const Principal = () => {
       </div>
       <div className="container mx-auto mt-10">
         <h3 className="text-xl text-center text-indigo-700 ">
-          Contaras con pagos en linea de manera segura
+        Podras Importar tu Inventario
         </h3>
         <div className="grid md:grid-cols-2 p-10">
           <div className="flex flex-col justify-center items-center">
             <p data-aos="zoom-in-right" className="text-center mb-5  text-indigo-700 leading-loose text-lg">
-              Contarás con la conveniencia y seguridad de los pagos en línea al
-              utilizar nuestra plataforma. Nuestro sistema garantiza
-              transacciones seguras y protegidas, brindándote tranquilidad y
-              confianza en cada compra o transacción financiera que realices.
-              Simplifica tus procesos de pago y disfruta de una experiencia
-              fluida y sin complicaciones con nosotros
+              Con nuestra plataforma, no solo te ofrecemos una experiencia visualmente vibrante y cautivadora, sino que también te brindamos la funcionalidad necesaria para gestionar tu
+              negocio de manera eficiente.
+              Podrás importar fácilmente tu inventario, aprovechando nuestra interfaz intuitiva y amigable. Ya sea que estés administrando una tienda en línea, un almacén de productos o cualquier
+              otro tipo de negocio, nuestra herramienta de importación de inventario te permitirá mantener tus registros actualizados de manera rápida y sin complicaciones. Así, podrás concentrarte
+              en lo que más importa: hacer crecer tu empresa y deleitar a tus clientes con productos de calidad
             </p>
             <Button
               onClick={() => (window.location.href = "#contactanos")}
@@ -148,7 +147,7 @@ const Principal = () => {
               Contáctanos{" "}
             </Button>
           </div>
-          <img src="./pagos-linea.png" alt="pagos" />
+          <img src="./excel.png" alt="excel" />
         </div>
       </div>
       <div className="bg-indigo-700  p-5 " id="contactanos">
